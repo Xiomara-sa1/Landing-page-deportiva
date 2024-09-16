@@ -1,0 +1,37 @@
+/* Estilo para la sección del carrusel */
+#carusel {
+    padding: 20px;
+    background-color: #f8f9fa !important; /* Color de fondo suave con !important */
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    max-width: 600px !important; /* Ajusta el ancho máximo del carrusel */
+    max-height: 600px !important; /* Ajusta la altura máxima del carrusel */
+    margin: 0 auto !important; /* Centra el carrusel horizontalmente */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel-inner img {
+    width: 600px !important; /* Ajusta el ancho de las imágenes */
+    height: 600px !important; /* Ajusta la altura de las imágenes */
+    object-fit: cover !important; /* Recorta las imágenes para llenar el contenedor sin distorsionar */
+}
+
+/* Estilo para los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5% !important; /* Ajusta el ancho de los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo de los íconos de los controles */
+    border-radius: 50% !important; /* Hace los íconos redondos */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Cambia el fondo de los controles al pasar el ratón */
+}
