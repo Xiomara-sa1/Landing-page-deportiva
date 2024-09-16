@@ -38,3 +38,15 @@ window.addEventListener('click', (event) => {
         }
     });
 });
+document.getElementById("formSelector").addEventListener("change", function() {
+    const forms = document.querySelectorAll("article");
+    forms.forEach(form => {
+        form.classList.remove("visible");
+        form.style.display = "none"; // Ocultar todos los formularios
+    });
+    const selectedForm = this.value;
+    if (selectedForm) {
+        const formToShow = document.getElementById(selectedForm + "Form");
+        formToShow.style.display = "block"; // Mostrar solo el formulario seleccionado
+    }
+});

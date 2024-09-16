@@ -1,3 +1,6 @@
+body{
+    background: #ecf0f1  !important;
+}
 /* Estilos para la barra de navegación */
 .navbar {
     background: #2c3e50;
@@ -90,6 +93,7 @@
     justify-content: center;
     width: 40px;
     height: 30px;
+    margin: 5px;
     font-size: 1.5rem;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -215,7 +219,7 @@
   /* Estilo para la sección del carrusel */
 #carusel {
     padding: 20px;
-    background-color: #f8f9fa !important; /* Color de fondo suave con !important */
+    background-color: #ecf0f1 !important; /* Color de fondo suave con !important */
 }
 
 /* Estilo para el carrusel */
@@ -248,4 +252,396 @@
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
     background-color: rgba(0, 0, 0, 0.8) !important; /* Cambia el fondo de los controles al pasar el ratón */
+}
+/* Estilos generales para la sección de deportes */
+#sports {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#sports h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de cartas */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinea las tarjetas en filas y columnas */
+    background: #ecf0f1 !important;
+}
+
+/* Estilos para cada carta de producto */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    width: 100%;
+    max-width: 22%; /* Ajusta el ancho máximo para permitir 4 tarjetas por fila */
+    text-align: center;
+    padding: 10px; /* Reduce el relleno para ajustar el tamaño */
+    box-sizing: border-box;
+}
+
+/* Estilos para las imágenes */
+.product-card img.image {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 150px; /* Reduce la altura de las imágenes */
+    object-fit: cover; /* Escala y recorta la imagen para llenar el contenedor */
+    border-radius: 4px;
+}
+
+.name-product {
+    margin: 10px 0;
+    font-size: 1em; /* Reduce el tamaño de la fuente */
+    color: #333;
+}
+
+.price-bottons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.2em; /* Reduce el tamaño de la fuente */
+    color: #333;
+    margin: 10px 0;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em; /* Reduce el tamaño de la fuente */
+}
+
+#quantity {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.add {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    /* estilos sectios xiomara*/
+/*Inicio de testimonios*/
+ 
+ /* Estilos generales para el contenedor de testimonios */
+ .testimonios-section h2{
+    font-size: 5rem;
+    color: var(--White);
+    margin: 2px 2px 2px 0;
+}
+ 
+.testimonios-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--orange);
+  }
+ 
+  .testimonios-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto, una columna */
+    gap: 20px; /* Espacio entre las tarjetas */
+  }
+ 
+ .testimonial {
+    display: flex; /* Para alinear la imagen y el texto en la misma línea */
+    align-items: center; /* Centrar verticalmente la imagen y el texto */
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+  }
+ 
+  .testimonial img {
+    width: 60px; /* Tamaño de la imagen */
+    height: 60px; /* Mantener la imagen cuadrada */
+    border-radius: 50%; /* Convertir la imagen en un círculo */
+    object-fit: cover; /* Asegurar que la imagen se ajuste bien */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+  }
+ 
+  .testimonio-card {
+    display: flex;
+    flex-direction: column; /* Poner los textos uno debajo del otro */
+  }
+ 
+  .testimonio-card p {
+    font-size: 1rem;
+    color: #2c3e50;
+    margin: 0;
+  }
+ 
+  .testimonio-card h1 {
+    font-size: 1.2rem;
+    margin: 5px 0 0 0;
+    color: #2980b9;
+  }
+ 
+  .testimonio-card h2 {
+    font-size: 1rem;
+    color: #4caf50;
+    margin: 2px 0 0 0;
+  }
+ 
+  /* Media queries para pantallas más grandes (pares en escritorio) */
+@media (min-width: 768px) {
+    .testimonios-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas y grandes */
+    }
+  }
+ 
+  /* Media queries para pantallas aún más grandes (opcional) */
+  @media (min-width: 1200px) {
+    .testimonios-container {
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas muy grandes */
+    }
+  }
+/* fin Testimonios*/
+/*Inicio galeria*/
+.gallery {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--green);
+  }
+ 
+  .gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+ 
+  /* Estilos para el contenedor de la galería */
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Por defecto, una columna en pantallas pequeñas */
+    gap: 20px;
+  }
+ 
+  /* Estilos para los elementos de la galería */
+  .gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+    object-fit: cover;
+  }
+ 
+  .gallery-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #2c3e50;
+  }
+ 
+  /* Media queries para pantallas medianas */
+  @media (min-width: 600px) {
+    .gallery-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+  }
+ 
+  /* Media queries para pantallas grandes */
+  @media (min-width: 900px) {
+    .gallery-container {
+      grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    }
+  }
+ 
+  /* Media queries para pantallas extra grandes */
+  @media (min-width: 1200px) {
+    .gallery-container {
+      grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en pantallas muy grandes */
+    }
+  }
+/*Final Galeria*/
+/*Inicio de formulario*/
+.form {
+    padding: 20px;
+    text-align: center;
+  }  
+ 
+ 
+  /* Estilos para la selección del formulario */
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+ 
+ /* Contenedor de los formularios */
+.formsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+ 
+  /* Estilo general para las tarjetas de formularios */
+  article {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: none; /* Ocultamos todos los formularios por defecto */
+  }
+ 
+  /* Fondo general para las tarjetas */
+  article#maintenanceForm {
+    background-color: #e67e22;
+  }
+ 
+  article#partsForm {
+    background-color: #2980b9;
+  }
+ 
+  article#contactForm {
+    background-color: #8e44ad;
+  }
+ 
+  article#subscribeForm {
+    background-color: #2c3e50;
+  }
+ 
+  /* Botones de los formularios */
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+ 
+  button:hover {
+    background-color: #45a049;
+  }
+ 
+  /* Mostrar el formulario seleccionado */
+  article.visible {
+    display: block;
+  }
+ 
+  /* Media queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    article {
+      max-width: 100%;
+    }
+  }
+/*Final de formulario */  
+ 
+ 
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 40px 20px;
+}
+ 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ 
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+ 
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+ 
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+ 
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+ 
+.footer-section ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+ 
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+ 
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+ 
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+ 
+/* Estilo para la parte inferior del footer */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #7f8c8d;
+    padding-top: 20px;
+}
+ 
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+ 
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+   
+    .footer-section {
+        margin-bottom: 20px;
+    }
 }
