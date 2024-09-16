@@ -1,0 +1,251 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+  /* Estilo para el botón navbar-toggler */
+  .navbar-toggler {
+    background-color: white !important; /* Fondo blanco con !important */
+    color: #2980b9 !important; /* Color del texto */
+    border: 1px solid white !important; /* Borde con el color del texto */
+    padding: 10px !important; /* Espaciado interno */
+    border-radius: 5px !important; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves */
+  }
+  
+  .navbar-toggler:hover {
+    background-color: white !important; /* Fondo azul al pasar el ratón */
+    color: white !important; /* Color del texto al pasar el ratón */
+  }
+  .offcanvas-title{
+    color: white !important;
+  }
+  .offcanvas{
+    background: #2c3e50 !important;
+  }
+  .navbar-toggler:focus {
+    outline: none !important; /* Quitar el contorno en el enfoque */
+  }
+  
+  .nav-link{
+    color: white !important;
+  }
+  
+  /* Estilo para el ícono bonito y el texto SportVibes */
+  .icono-bonito {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #ecf0f1;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 10px; /* Espacio entre ícono y texto */
+  }
+  
+  .navbar-brand {
+    color: white !important;
+  }
+  
+  /* Estilo para el botón Conócenos */
+  .btn-conocenos {
+    background-color: transparent; /* Fondo transparente */
+    color: #2980b9; /* Color del texto */
+    border: 2px solid #2980b9; /* Borde con el mismo color que el texto */
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px; /* Espaciado alrededor del botón */
+    cursor: pointer;
+    border-radius: 5px;
+    background: #2c3e50 !important;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Transiciones suaves */
+  }
+  
+  .btn-conocenos:hover {
+    background-color: #2980b9; /* Fondo azul al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+    transform: scale(1.05); /* Efecto de aumento */
+  }
+  
+  .btn-conocenos:active {
+    background-color: #2980b9; /* Fondo azul al hacer clic */
+    color: white; /* Color del texto al hacer clic */
+    transform: scale(1); /* Sin aumento */
+  }
+  
+  /* Estilo para el ícono del carrito */
+  .icono-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 30px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 10px; /* Espacio entre carrito e ícono desplegable */
+  }
+  
+  .icono-cart:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icono-cart:active {
+    background-color: #2980b9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  /* Estilo para el modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    display: flex;
+    justify-content: space-between; /* Distribuye las cartas uniformemente */
+    flex-wrap: nowrap; /* Impide que las cartas se muevan a la siguiente fila */
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 1000px; /* Ajusta el ancho máximo del modal */
+    border-radius: 5px; /* Bordes redondeados */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Contenedor de las tarjetas */
+  .container-tarjetas {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las tarjetas */
+    flex-wrap: nowrap; /* Mantiene todas las tarjetas en la misma línea */
+    gap: 10px; /* Espacio entre las tarjetas */
+  }
+  
+  /* Estilos para las tarjetas */
+  .tarjeta {
+    flex: 1 1 auto; /* Permite que las tarjetas se ajusten dentro del contenedor */
+    width: 18rem; /* Ancho de las tarjetas */
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  .card-texto {
+    text-align: center; /* Centrar el texto dentro de la tarjeta */
+  }
+  
+  .card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .texto {
+    padding: 10px; /* Añadir relleno alrededor del texto */
+  }
+  .fotos {
+    background: #2980b9;
+    width: 100%; /* El ancho se ajusta al 100% del contenedor */
+    max-width: 100px; /* Limita el ancho máximo a 200px */
+    height: auto; /* El alto se ajusta automáticamente para mantener la proporción */
+    aspect-ratio: 1 / 1; /* Mantiene la imagen cuadrada */
+    object-fit: cover; /* Ajusta el contenido para cubrir el área del contenedor */
+    border-radius: 50%; /* Hace la imagen completamente redonda */
+    border: 3px solid white; /* Opcional: añade un borde blanco */
+    margin-right: 10px;
+  }
+  
+  /* Ajustes para pantallas más pequeñas */
+  @media (max-width: 600px) {
+    .fotos {
+      max-width: 100px; /* Ajusta el tamaño máximo para pantallas pequeñas */
+    }
+  }
+  .contenedores-fotos{
+    padding: 10px;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    margin: 2px;
+    border-radius: 20px;
+  }
+  .text-fotos{
+    color: white;
+  }
+
+  /*SECTION CARUSEL*/
+  /* Estilo para la sección del carrusel */
+#carusel {
+    padding: 20px;
+    background-color: #f8f9fa !important; /* Color de fondo suave con !important */
+}
+
+/* Estilo para el carrusel */
+.carousel {
+    max-width: 600px !important; /* Ajusta el ancho máximo del carrusel */
+    max-height: 600px !important; /* Ajusta la altura máxima del carrusel */
+    margin: 0 auto !important; /* Centra el carrusel horizontalmente */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+}
+
+/* Estilo para las imágenes del carrusel */
+.carousel-inner img {
+    width: 600px !important; /* Ajusta el ancho de las imágenes */
+    height: 600px !important; /* Ajusta la altura de las imágenes */
+    object-fit: cover !important; /* Recorta las imágenes para llenar el contenedor sin distorsionar */
+}
+
+/* Estilo para los controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5% !important; /* Ajusta el ancho de los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Fondo de los íconos de los controles */
+    border-radius: 50% !important; /* Hace los íconos redondos */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Cambia el fondo de los controles al pasar el ratón */
+}
